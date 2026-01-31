@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  background-color: var(--wisper);
+  color: var(--avacado);
+  width: 100vw;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  padding-left: 5%;
+}
+
+.logoImage {
+  width: 90%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logoImage:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks a {
+  color: var(--avacado);
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: raleway;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: var(--teak);
+  transform: scale(1.1);
+}
+
+.signedOutButton button {
+  color: var(--wisper);
+  background-color: var(--lunar-green);
+  max-width: 80px;
+  max-height: 40px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-family: raleway;
+  padding: 5px 10px;
+  border: 1px solid var(--lunar-green);
+  border-radius: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.signedOutButton:hover {
+  color: var(--lunar-green);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transform: scale(1.03);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.profileImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.profileImg:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile responsive */
+@media (max-width: 767px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+/* Tablet responsive */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navLinks {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+}
+
+/* Desktop responsive */
+@media (min-width: 1920px) and (max-width: 2559px) {
+  .navLinks {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+}
+
+/* Ultrawide responsive */
+@media (min-width: 2560px) {
+  .navLinks {
+    display: flex;
+    gap: 20px;
+  }
+
+  .hamburgerMenu {
+    display: none;
+  }
+}
